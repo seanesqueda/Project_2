@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./reg.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+
+    <style>
+    body{
+        margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+    background: white;
+}
+#avatar{
+    border: 1px solid turquoise;
+    background: turquoise;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-shadow: 2px 2px gray;
+        padding: 20px;
+       font-size: 50px;
+       font-weight: bold;
+       
+       
+
+   
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 35px;
+    color: rgb(66, 66, 66);
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+}
+.container {
+    background:white;
+    box-shadow: 3px 3px lightgray;
+    font-family: 'Raleway', sans-serif;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    opacity: .85;
+    border-radius: 1px;
+    padding: 20px;
+    width: 500px;
+    border: 1px solid lightgray;
+    margin-top: 40px;
+    
+}
+.container input[type = 'text'], input[type="password"]
+{
+    
+    border: 1px solid lightgray;
+    
+    width: 450px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 12px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+
+.control-label{
+ font-size: 19px;
+ color:rgb(66, 66, 66);
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+}
+
+.help-block{
+    font-size: 10px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+#sign-up-btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: turquoise;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 1px;
+    margin-top: 0px;
+    width:200px;
+    text-align: center
+    
+
+}
+
+#sign-up-btn:hover{
+    cursor: pointer;
+    background: #FFBD33;
+    
+    color: #000;
+    
+}
+.controls a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: gray;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.controls a:hover {
+    color:#ffc107;
+}
+    </style>
+</head>
+
+<body>
+    <h1 id="avatar">
+            <a href="./homepage.html" style="text-decoration:none; color: white;">
+                commUNITY
+        </a>
+    </h1>
+    <div class="container">
+        <form class="form-horizontal" action='' method="POST">
+                <h1>Sign Up!
+                    </h1>
+            
+                <div id="legend">
+                </div>
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">Email Address</label>
+                    <div class="controls">
+                        <input type="text" id="email" name="email" placeholder="Enter Email Address" class="input-xlarge">
+                        
+                    </div>
+                </div>
+                <div class="control-group">
+                    <!-- Password-->
+                    <label class="control-label" for="password">Password</label>
+                    <p class="help-block">(Password should be at least 6 characters)</p>
+                    <div class="controls">
+                        <input type="password" id="password" name="password" placeholder="Enter Password" class="input-xlarge">
+                        
+                    </div>
+                </div>
+                <div class="control-group">
+                    <!-- Password -->
+                    <label class="control-label" for="password_confirm">Confirm password</label>
+                    <div class="controls">
+                        <input type="password" id="password-confirm" name="password_confirm" placeholder="Confirm Password"
+                            class="input-xlarge">
+                        
+                    </div>
+                </div>
+                <p id="error-alert"></p>
+                <div class="control-group">
+                    <!-- Button -->
+                    <div class="controls">
+                        <button id = "sign-up-btn" class="btn btn-success">Register</button>
+                        <br>
+                        <br>
+                        <a href="./login.html">Have an account? Login now!</a>
+                    </div>
+                </div>
+               
+        </form>
+    </div>
+    
+    <script ></script>
+</body>
+</html>
