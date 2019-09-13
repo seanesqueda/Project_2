@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#submit").on("click", function(e) {
         var userInfo = {
             email: $("#email").val().trim(),
-            password: $("#email").val().trim()
+            password: $("#password").val().trim()
         }
         axios.post('/auth/login', userInfo)
         .then(function (resp) {
