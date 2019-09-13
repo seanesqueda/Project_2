@@ -1,0 +1,22 @@
+.head .avatar {
+    border: 1px solid turquoise;
+    background: turquoise;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px gray;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    }
+ .head h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .head a{
+        text-decoration: none;
+        color: white;
+    }
