@@ -1,7 +1,4 @@
-body {
-  margin: 0;
-  min-width: 250px;
-}
+
 
 /* Include the padding and border in an element's total width and height */
 * {
@@ -12,53 +9,56 @@ body {
     display: none
   }
 
-  img {
-    vertical-align: middle;
-  }
-
   /* Slideshow container */
   .slideshow-container {
     width: 100%;
     height: 100%;
     position: relative;
     
+    
   }
-
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 3s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+ 
+  @media only screen and (max-width: 600px) {
+    .slideshow-container img {height:400px; width: 100%;margin-left: 1.3%}
+    .slideshow-container h1 {font-family: 'Raleway', sans-serif; position:absolute; top:40%;text-align: center;font-size: 30px; color: white; font-weight: bold }
   }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  .slideshow-container h5{
+    left:10%;
   }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .slideshow-container img {height:400px;width: 100%;margin-left: 1.3%}
+    .slideshow-container h1 {font-family: 'Raleway', sans-serif; position:absolute; left:0; top:40%;text-align: center;font-size: 30px; color: white; font-weight: bold }
   }
-
-  /* The dots/bullets/indicators */
-
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
+  .slideshow-container h5{
+    left:20%;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .slideshow-container img {height:550px;width: 100%x;margin-left: 1.3%}
+    .slideshow-container h1 {font-size: 30px;}
+    .slideshow-container h5{
+      left:20%;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .slideshow-container img {height:650px;width:100%;margin-left: 1.3%}
+    .slideshow-container h1 {font-size: 30px;}
+    .slideshow-container h5{
+      left:40%;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .slideshow-container img {height:750px; width: 100%; margin-left: 1.3%}
+    .slideshow-container h1 {font-size: 30px;}
+    .slideshow-container h5{
+      left:40%;
+    }
   }
 
   /* Fading animation */
@@ -89,15 +89,6 @@ body {
     }
   }
 
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-      font-size: 11px
-    }
-  }
 
   h1 {
     text-shadow: 2px 2px gray;
@@ -125,5 +116,19 @@ body {
     padding: 4%;
 
   }
+  .navbar-brand {
 
-  
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px gray;
+    font-weight: bold;
+    
+}
+
+.nav-link{
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+
+

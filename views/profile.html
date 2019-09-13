@@ -5,51 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" href="/css/profile.css" rel="stylesheet"/>
+    <link type="text/css" href="/css/profile.css" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="width:100%;">
-        <a class="navbar-brand" href="#">
-            <h1 class="avatar">
-                <a href="/" style="text-decoration:none; color: white;">
-                    commUNITY
-                </a></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Categories
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="../views/homepage.html">Announcements</a>
-                              <a class="dropdown-item" href="google.com">Dance Tips</a>
-                              <a class="dropdown-item" href="facebook.com">Choreography</a>
-                              <a class="dropdown-item" href="google.com">Dance MEMES</a>
-                              
-                          </li>
-                
-            </ul>
-             <a class="nav-link" href="/login"><img src="/images/logout.jpg" style="width: 25px; height: 25px;"></a>
-        </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-auto" style="border-radius: 0; ">
+                <a class="navbar-brand" href="#">commUNITY</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ml-auto" style="float:right;">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Categories
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Announcements</a>
+                                  <a class="dropdown-item" href="#">Dance Tips</a>
+                                  <a class="dropdown-item" href="#">Choreography</a>
+                                  <a class="dropdown-item" href="#">Dance MEMES</a>
+                                </div>
+                              </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/images/home.png" alt="home"
+                                style="width: 20px; height: 20px;"></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/images/like.png" alt="Most Liked"
+                                style="width: 20px; height: 20px;"></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/images/latest.jpg" alt="Latest Post"
+                                style="width: 20px; height: 20px;"></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="/login"><img src="/images/logout.jpg" alt="Logout"
+                                style="width: 20px; height: 20px;"></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
 
     <div class="top">
-        <div class="slide-right" >
-            <p>Welcome Back!</p>
+        <div class="slide-right">
+            <p>Welcome Back!
+                    <button style="float:right; font-size: 18px;padding:10px;margin-top:23px;background: lightgray;">
+                        <a href="/submit" style="text-decoration: none; color:white">Create New Post</a></button>
+            </p>
+            
         </div>
         <div class="row">
             <div class="col-md-8" id="profile">
@@ -102,7 +114,7 @@
 
 
     <script>
-        
+
         var width = 20;
 
         function move() {
@@ -173,8 +185,8 @@
             }
         }
     </script>
-<script src="jq/jquery-2.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="jq/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 
