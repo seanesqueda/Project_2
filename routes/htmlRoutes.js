@@ -2,29 +2,30 @@ var db = require("../models");
 var path = require("path"); 
 
 module.exports = function(app) {
+
   // Load index page
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/homepage.html"));
+    res.sendFile(path.join(__dirname, "../public/homepage.html"));
   });
 
   app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/login.html"));
+    res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
   app.get("/register", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/register.html"));
+    res.sendFile(path.join(__dirname, "../public/register.html"));
   });
 
   app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/profile.html"));
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
   app.get("/submit", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/submit.html"));
+    res.sendFile(path.join(__dirname, "../public/submit.html"));
   });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
-    res.render("404");
+    res.sendFile(path.join(__dirname, "../public/error.html"));
   });
 };
