@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+padding: 0; 
+font-family: sans-serif;
+background: white;
+}
+#avatar{
+border: 1px solid turquoise;
+background: turquoise;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px gray;
+    padding: 20px;
+   font-size: 50px;
+   font-weight: bold;
+   
+   
+
+
+}
+h1{
+margin-top: 0px;
+margin-bottom: 35px;
+color: rgb(66, 66, 66);
+font-family: 'Raleway', sans-serif; 
+text-align: center;
+}
+.container {
+background:white;
+box-shadow: 3px 3px lightgray;
+font-family: 'Raleway', sans-serif;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+opacity: .85;
+border-radius: 1px;
+padding: 20px;
+width: 500px;
+border: 1px solid lightgray;
+margin-top: 40px;
+
+}
+.container input[type = 'text'], input[type="password"]
+{
+
+border: 1px solid lightgray;
+
+width: 450px;
+background: transparent;
+outline: none;
+height: 40px;
+color: black;
+font-size: 12px;
+margin-top: 9px;
+margin-bottom: 15px;
+}
+
+.control-label{
+font-size: 19px;
+color:rgb(66, 66, 66);
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+}
+
+.help-block{
+font-size: 10px;
+color: black;
+font-family: 'Raleway', sans-serif;
+}
+
+#sign-up-btn{
+border: none;
+outline: none;
+height: 40px;
+background: turquoise;
+color: #fff;
+font-size: 18px;
+border-radius: 1px;
+margin-top: 0px;
+width:200px;
+text-align: center
+
+
+}
+
+#sign-up-btn:hover{
+cursor: pointer;
+background: #FFBD33;
+
+color: #000;
+
+}
+.controls a{
+text-decoration: none;
+font-size: 13px;
+line-height: 20px;
+color: gray;
+font-family: 'Raleway', sans-serif;
+
+}
+
+.controls a:hover {
+color:#ffc107;
+}
