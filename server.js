@@ -9,7 +9,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 var auth = jwt({
-  secret: process.env.JWT_SECRET
+  secret: "noonewillknowthissecret"
 })
 // Middleware
 app.use(express.urlencoded({ extended: false }));
