@@ -4,6 +4,7 @@ $(document).ready(function () {
             email: $("#email").val().trim(),
             password: $("#password").val().trim()
         }
+        console.log(userInfo)
         axios.post('/auth/login', userInfo)
         .then(function (resp) {
             console.log(resp)

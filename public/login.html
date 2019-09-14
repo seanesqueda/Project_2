@@ -9,6 +9,9 @@
     <link type="text/css" href="/css/login.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
     <title>commUNITY</title>
 
 </head>
@@ -26,14 +29,14 @@
             <form action="">
                 <p>
                     <img src="/images/user.png" style="height:12px;width:12px; margin-right: 5px;">E-mail</p>
-                <input type="text" name="" placeholder="Enter E-mail">
+                <input type="text" name="" placeholder="Enter E-mail" id="email">
 
                 <p>
                     <img src="/images/pass.ico" style="height:12px;width:12px;">
                     Password</p>
-                <input type="password" name="" placeholder="Enter Password">
-                <input type="submit" name="" value="Login">
-                <a href="/register">Don't have an account? Sign up
+                <input type="password" name="" placeholder="Enter Password" id="password">
+                <input type="submit" name="" value="Login" id="submit">
+                <a href="/register.html">Don't have an account? Sign up
                     now!</a>
 
             </form>
@@ -42,6 +45,7 @@
         </div>
 
     </body>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

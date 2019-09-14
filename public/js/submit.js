@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     function submitPost(Post) {
         $.post("/api/posts/", Post, function () {
-            window.location.href = "/profile";
+            window.location.assign("/profile.html");
         });
     }
 
