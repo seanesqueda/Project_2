@@ -3,6 +3,17 @@ var router = express.Router()
 var Auth = require('../resources/authResource.js')
 var _ = require('lodash')
 
+router.post('/register', function(req, res) {
+    var user = _.pick(req.body, ['email', 'password'])
+    Auth.register(user)
+    .then(function () {
+        res.json({ message: 'User Created' })
+    })
+    .catch(function (err) {
+        res.status(400).json({ error: err.toString() })
+    })
+});
+
 router.post('/login', function(req, res) {
     var user = _.pick(req.body, ['email', 'password'])
     Auth.login(user)
@@ -11,17 +22,6 @@ router.post('/login', function(req, res) {
     })
     .catch(function (err) {
         console.log(err)
-        res.status(400).json({ error: err.toString() })
-    })
-})
-
-router.post('/register', function(req, res) {
-    var user = _.pick(req.body, ['email', 'password'])
-    Auth.register(user)
-    .then(function () {
-        res.json({ message: 'User Created' })
-    })
-    .catch(function (err) {
         res.status(400).json({ error: err.toString() })
     })
 })

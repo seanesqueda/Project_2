@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-    $("#submit").on("click", function (e) {
+    $("#sign-up-btn").on("click", function (e) {
+        e.preventDefault();
         var email = $("#email").val().trim();
         var password = $("#password").val().trim();
         var passwordConfirm = $("#password-confirm").val().trim();
@@ -22,12 +23,14 @@ $(document).ready(function () {
             .catch(function (err) {
                 console.log(err)
             })
-        //     insertUser(userInfo);
-        // });
-        // function insertUser(userData) {
-        //     $.post("/api/user", userData, function() {
-        //         window.location.href = "/login"
-        //     })
 
+        // insertUser(userInfo);
     });
+    
+    // function insertUser(userData) {
+    //     $.post("/api/users", userData, function () {
+    //         window.location.href = "/login"
+    //     });
+    // }
+
 });
