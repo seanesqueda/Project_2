@@ -38,30 +38,51 @@ $(document).ready(function () {
 
     var title = $("#title");
     var body = $("#body");
-    var topic = $("#topic");
+    var cmsForm = $("#cms");
+    var postCategorySelect = $("#category");
     var user = 1;
+    var updating = false;
 
-    $("submit").on("click", function (e) {
-        e.preventDefault();
+    $(cmsForm).on("submit", function handleFormSubmit(event) {
+        event.preventDefault();
 
-        if (!title.val().trim() || !body.val().trim() || !topic.val()) {
+        if (!title.val().trim() || !body.val().trim()) {
             return;
         }
 
         var newPost = {
             title: title.val().trim(),
             body: body.val().trim(),
-            topic: topic.val(),
+            category: postCategorySelect.val(),
             UserId: user
         };
         console.log(newPost);
-        submitPost(newPost)
-    });
+        if (updating) {
+            newPost.user = UserId;
+            
+            updatePost(newPost);
+          }
+          else {
+            submitPost(newPost);
+          }
+          
+        });
+        
+    
 
     function submitPost(Post) {
         $.post("/api/protected/posts", Post, function () {
-            window.location.href = "./profile.html";
+            window.location.href = "./blogposts.html";
         });
     }
-
+    function updatePost(Post) {
+        $.ajax({
+          method: "PUT",
+          url: "/api/posts",
+          data: Post
+        })
+          .then(function() {
+            window.location.href = "./blogposts.html";
+          });
+      }
 });
