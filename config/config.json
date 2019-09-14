@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "root",
-    "password": "8652812aK14",
-    "database": "communitydb",
-    "host": "localhost",
+    "username": "gtvqn8v2ege67sbv",
+    "password": "nfaiz5o4l05u1mhs",
+    "database": "xf7i9s7kk8ge7wpb",
+    "host": "u28rhuskh0x5paau.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "testdb",
-    "host": "localhost",
+    "username": "gtvqn8v2ege67sbv",
+    "password": "nfaiz5o4l05u1mhs",
+    "database": "xf7i9s7kk8ge7wpb",
+    "host": "u28rhuskh0x5paau.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "logging": false
   },
