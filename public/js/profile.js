@@ -34,7 +34,7 @@ var authHelper = {
 }
 $(document).ready(function () {
     authHelper.isLoggedIn()
-    $(document.body).append('<div>' + JSON.stringify(authHelper.parseToken(localStorage.getItem('token'))) + '</div>')
+   
     myAxios({
         url: '/api/protected',
         method: 'GET'
