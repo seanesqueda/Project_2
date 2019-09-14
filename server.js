@@ -7,6 +7,7 @@ var protectedRoutes = require('./routes/protectedRoutes');
 
 var app = express();
 var PORT = process.env.PORT || 8080;
+
 var auth = jwt({
   secret: process.env.JWT_SECRET
 })
