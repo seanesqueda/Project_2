@@ -24,6 +24,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/submit.html"));
   });
 
+  app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/blogposts.html"));
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/error.html"));

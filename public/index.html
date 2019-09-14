@@ -16,20 +16,45 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="width:100%;">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/login.html">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-auto" style="border-radius: 0; ">
+    <a class="navbar-brand" href="#">commUNITY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto" style="float:right;">
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Announcements</a>
+                      <a class="dropdown-item" href="#">Dance Tips</a>
+                      <a class="dropdown-item" href="#">Choreography</a>
+                      <a class="dropdown-item" href="#">Dance MEMES</a>
+                    </div>
+                  </li>
+        <li class="nav-item">
+                <a class="nav-link" href="/"><img src="/images/home.png" alt="home"
+                    style="width: 20px; height: 20px;"></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#"><img src="/images/like.png" alt="Most Liked"
+                    style="width: 20px; height: 20px;"></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#"><img src="/images/latest.png" alt="Latest Post"
+                    style="width: 20px; height: 20px;"></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="/login"><img src="/images/logout.jpg" alt="Logout"
+                    style="width: 20px; height: 20px;"></a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
   <section id="s1" style="height:100%;">
      
     <div class="row">
@@ -127,7 +152,7 @@
     <div class="row">
       <div class="col-md-6">
         <h3 id="announce" style="text-align:center; margin: 50px;">
-          <a href="#" style="text-decoration:none; color: black">
+          <a href="./announce.html" style="text-decoration:none; color: black">
               Announcements
               <br>
               <br>
@@ -137,7 +162,7 @@
       </div>
       <div class="col-md-6">
         <h3 id="tips" style="text-align:center; margin: 50px;">
-          <a href="#" style="text-decoration:none; color: black;">
+          <a href="./tips.html" style="text-decoration:none; color: black;">
               Dance Tips
               <br>
               <br>
@@ -151,7 +176,7 @@
     <div class="row">
       <div class="col-md-6">
         <h3 id="choreo" style="text-align:center; margin: 50px;">
-          <a href="#" style="text-decoration:none; color: black;">
+          <a href="./choreo.html" style="text-decoration:none; color: black;">
               Choreography
               <br>
               <br>

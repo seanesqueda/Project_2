@@ -42,6 +42,7 @@ body{
     background: #888;
     color: #fff;
     text-decoration: line-through;
+    
 }
 
 /* Add a "checked" mark when clicked on */
@@ -56,6 +57,7 @@ body{
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+
 }
 
 /* Style the close button */
@@ -79,6 +81,7 @@ body{
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    color: black;
 
 }
 
@@ -130,7 +133,7 @@ input {
 }
 
 .top {
-    margin-top: 5%;
+    margin-top: 2%;
    
 
 }
